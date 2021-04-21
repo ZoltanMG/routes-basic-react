@@ -11,13 +11,17 @@ import {
 function App() {
   return (
     <Router>
+      <Link to="/inicio">Inicio</Link>
+      <Link to="/">Base</Link>
       <Switch>
-        <Route path="/inicio">
+
+        {/* Forma 1 de utilizar route */}
+        <Route exact path="/inicio">
           <Inicio />
         </Route>
-        <Route path="/">
-          <Base />
-        </Route>
+        
+        {/* forma 2 y mas corta de usar route */}
+        <Route exact path="/" component={Base}/>
       </Switch>
     </Router>
   );
