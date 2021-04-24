@@ -16,7 +16,7 @@ function App() {
       <Switch>
 
         {/* Forma 1 de utilizar route */}
-        <Route exact path="/inicio">
+        <Route exact path="/inicio/:nombre">
           <Inicio />
         </Route>
         
